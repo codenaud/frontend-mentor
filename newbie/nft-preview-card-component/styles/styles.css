@@ -101,6 +101,7 @@ body {
     display: flex;
     justify-content: center;
     background-position: center;
+    transition: .8s ease-out;
 }
 
 .image__overlay:hover {
@@ -114,7 +115,6 @@ body {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
-    transition: .8s ease-out;
 }
 
 .equilibrium__description {
