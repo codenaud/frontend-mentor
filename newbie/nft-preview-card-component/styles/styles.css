@@ -1,0 +1,225 @@
+/*
+    IMPORTING FONTS FROM (GOOGLE FONTS)
+    ### Font
+    - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+    - Weights: 300, 400, 600
+*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+/*
+    CREATING VARIABLES FOR COLORS IN GLOBAL SCOPE
+*/
+:root {
+
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+}
+
+/*
+    GENERALIZING COMMON REQUIRED STYLES & SHORT CSS RESET
+*/
+* {
+    border: 0px solid black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+*::selection {
+    /* Disables text highlighting */
+    color: none;
+    background: none;
+}
+
+*::-moz-selection {
+    /* For Mozilla Firefox */
+    color: none;
+    background: none;
+}
+
+/*
+    BODY SECTION
+*/
+html,
+body {
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white);
+    height: 100vh;
+    display: flex;
+}
+
+/*
+    MAIN SECTION
+*/
+.card__equilibrium {
+    width: 315px;
+    height: auto;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 30px 20px 12px rgba(12, 23, 41, 1);
+    -webkit-box-shadow: 0 30px 20px 12px rgba(12, 23, 41, 1);
+    -moz-box-shadow: 0 30px 20px 12px rgba(12, 23, 41, 1);
+}
+
+.equilibrium__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.equilibrium__image {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.equilibrium__image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0px;
+    width: 275px;
+    height: 99%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+}
+
+.image__overlay:hover {
+    position: absolute;
+    background-image: url(../images/icon-view.svg);
+    background-size: 35px 35px;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-color: hsla(178, 100%, 50%, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    transition: .8s ease-out;
+}
+
+.equilibrium__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.equilibrium__description-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.equilibrium__description-title:hover {
+    color: var(--cyan);
+    transition: .3s ease-out;
+}
+
+.equilibrium__description-text {
+    color: var(--soft-blue);
+}
+
+.equilibrium__market {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.equilibrium__market-price {
+    color: var(--cyan);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.equilibrium__market-update {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.equilibrium__market-update__timestamp {
+    font-weight: 400;
+    color: var(--soft-blue);
+}
+
+.equilibrium__profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--soft-blue);
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+    padding-bottom: 10px;
+}
+
+.equilibrium__profile-credits {
+    letter-spacing: -.5px;
+    font-weight: 400;
+}
+
+.equilibrium__profile img {
+    width: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.equilibrium__profile-username {
+    cursor: pointer;
+    color: var(--white);
+}
+
+.equilibrium__profile-username:hover {
+    color: var(--cyan);
+    transition: .3s ease-out;
+}
+
+/*
+    FOOTER
+*/
+
+footer {
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 15px;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--soft-blue);
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--cyan);
+    transition: .3s ease-out;
+}
