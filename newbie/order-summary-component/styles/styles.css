@@ -1,0 +1,292 @@
+/*
+    IMPORTING FONTS FROM (GOOGLE FONTS)
+    ### Font
+    - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+    - Weights: 500, 700, 900
+*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*
+    CREATING VARIABLES FOR COLORS IN GLOBAL SCOPE
+*/
+:root {
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-light: hsl(245, 75%, 65%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/*
+    GENERALIZING COMMON REQUIRED STYLES & SHORT CSS RESET
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+}
+
+*::selection {
+    /* Disables text highlighting */
+    color: none;
+    background: none;
+}
+
+*::-moz-selection {
+    /* For Mozilla Firefox */
+    color: none;
+    background: none;
+}
+
+/*
+    BODY SECTION
+*/
+html,
+body {
+    background: var(--pale-blue) url(../images/pattern-background-desktop.svg) no-repeat top left fixed;
+    background-size: 100%;
+    height: 100vh;
+    color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+    MAIN SECTION
+*/
+.card__container {
+    width: 408px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px 0px rgba(200, 210, 246, 1);
+    -webkit-box-shadow: 0px 20px 20px 0px rgba(200, 210, 246, 1);
+    -moz-box-shadow: 0px 20px 20px 0px rgba(200, 210, 246, 1);
+}
+
+.order__image {
+    width: 100%;
+    height: 220px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.order__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+
+.order__image img:hover {
+    transform: scale(1.1);
+}
+
+.order__container {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.order__information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order__title {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.order__description {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+
+.order__product {
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem;
+}
+
+.order__product-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.order__product-icon {
+    display: flex;
+    width: 43px;
+}
+
+.order__product-icon img {
+    width: 100%;
+}
+
+.order__product-description {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.order__product-title {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.order__product-price {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--desaturated-blue)
+}
+
+.order__product>a {
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+    cursor: pointer;
+}
+
+.order__product>a:hover {
+    color: var(--bright-blue-light);
+    text-decoration: none;
+    transition: .3s ease-out;
+}
+
+.order__validate {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.btn__accept {
+    background-color: var(--bright-blue);
+    color: var(--white);
+    padding: .9rem;
+    border: none;
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: 900;
+    box-shadow: 0px 10px 20px 0px rgba(200, 210, 246, 1);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(200, 210, 246, 1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(200, 210, 246, 1);
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.btn__accept:hover {
+    background-color: var(--bright-blue-light);
+}
+
+.btn__cancel {
+    background-color: var(--white);
+    border: none;
+    color: var(--desaturated-blue);
+    font-size: .9rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.btn__cancel:hover {
+    color: var(--dark-blue);
+}
+
+/*
+    FOOTER
+*/
+
+footer {
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 15px;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--bright-blue);
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--bright-blue-light);
+    transition: .3s ease-out;
+}
+
+/*
+    RESPONSIVE
+*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: var(--pale-blue) url(../images/pattern-background-mobile.svg) no-repeat top left fixed;
+        background-size: 100%;
+    }
+
+    .order__container {
+        padding: 2rem;
+    }
+    .order__image {
+        height: 180px;
+
+    }
+
+    .order__title {
+        font-size: 1.4rem;
+    }
+
+    .order__description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 .5rem;
+    }
+
+    .order__product {
+        padding: 1.1rem;
+        border-radius: 10px;
+    }
+
+    .order__product-description {
+        gap: .1rem;
+    }
+
+    .card__container {
+        width: 100%;
+        margin: 1.5rem;
+    }
+
+    .order__product-title {
+        font-size: .9rem;
+    }
+
+    .order__product-price {
+        font-size: .9rem;
+    }
+
+}
