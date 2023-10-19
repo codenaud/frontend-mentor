@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ## Colors */
+
+  --white: #fff;
+
+  /* ### Primary */
+
+  --light-cyan: hsl(193, 38%, 86%);
+  --meon-green: hsl(150, 100%, 66%);
+
+  /* ### Neutral */
+
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+
+  /* ### Shadow */
+  --box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: var(--dark-grayish-blue);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+.advice {
+  color: var(--meon-green);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+}
+.quotes {
+  color: var(--light-cyan);
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.5rem 1.5rem 0 1.5rem;
+}
+.image {
+  height: 100%;
+  min-height: 20px;
+  width: 488px;
+  background-image: url('../images/pattern-divider-desktop.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
+}
+.btnGetQuotes {
+  display: flex;
+  background-color: var(--meon-green);
+  border-radius: 100%;
+  padding: 0.8rem;
+  width: 100%;
+  max-width: fit-content;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: -24px;
+  transition: 0.5s ease;
+}
+
+.btnGetQuotes:hover {
+  box-shadow: 0 0 15px 2px var(--meon-green);
+  transition: 0.5s ease;
+}
+.attribution {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-top: 4rem;
+}
+
+.attribution a {
+  color: var(--grayish-blue);
+  text-decoration: none;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.attribution a:hover {
+  color: var(--meon-green);
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    background-image: url('../images/pattern-divider-mobile.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 3rem;
+  }
+  .container {
+    margin: 0 1rem;
+    max-width: 95%;
+  }
+  body {
+    height: 100vh;
+  }
+}
