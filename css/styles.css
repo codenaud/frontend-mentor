@@ -1,0 +1,227 @@
+/* Bootstrap icons */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css');
+
+/* Poppins Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font styles */
+  --ff: 'Poppins', sans-serif;
+  --fs: 1rem;
+
+  /* dark-theme */
+  --background-color: #121721;
+  --link-color: white;
+  --cards-color: #19202d;
+
+  --btn-html: rgba(33, 150, 243);
+  --btn-html-t20: rgba(33, 150, 243, 0.2);
+  --btn-css: rgb(143, 95, 232);
+  --btn-css-t20: rgba(143, 95, 232, 0.2);
+  --btn-newbie: rgb(255, 171, 0);
+  --btn-newbie-t20: rgba(255, 171, 0, 0.2);
+
+  --btn-transition: 0.4s;
+  --btn-transform: translateY(-0.25em);
+
+  /* colors */
+  --primary: #5964e0;
+  --primary-light: #959dea;
+  --primary-dark: #2c3167;
+  --white: white;
+
+  /* transitions */
+  --btn-color-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+/* Body Styles */
+body {
+  background-color: var(--background-color);
+  font-family: var(--ff);
+  font-size: var(--fs);
+}
+/* Titles Styles */
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+/* Header Styles */
+header {
+  width: 100%;
+  min-height: 162px;
+  position: relative;
+  background-image: url(../assets/img/bg-pattern-header.svg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: cover;
+  display: flex;
+}
+
+/* Nav Styles */
+nav {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul > li {
+  list-style: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: var(--link-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+nav > ul > li > a > i {
+  font-size: 1.5rem;
+}
+
+/* Btn Styles */
+.btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 10rem;
+  transition: var(--btn-color-transition);
+}
+.btn-contact {
+  background-color: var(--primary-dark);
+}
+.btn-contact:hover {
+  background-color: var(--background-color);
+}
+
+/* Card container */
+main {
+  max-width: 1158px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card-body {
+  width: 32%;
+  background-color: var(--cards-color);
+  border-radius: 0.75rem;
+}
+.card-img {
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  max-width: fit-content;
+  border-radius: 0.75rem 0.75rem 0 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
+.card-img img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.card-description {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-description-header > h2 > a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.card-description-header > h2 > a:hover {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+.card-description-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+.card-description-body-technology {
+  display: flex;
+  gap: 0.5rem;
+}
+.btn-category,
+.btn-level {
+  padding: 0.3rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--btn-color-transition);
+  letter-spacing: 0.5px;
+}
+.btn-html {
+  color: var(--btn-html);
+  background-color: var(--btn-html-t20);
+  transition: var(--btn-transition);
+}
+.btn-html:hover {
+  color: var(--white);
+  background-color: var(--btn-html);
+  transform: var(--btn-transform);
+  transition: var(--btn-transition);
+}
+.btn-css {
+  color: var(--btn-css);
+  background-color: var(--btn-css-t20);
+  transition: var(--btn-transition);
+}
+.btn-css:hover {
+  color: var(--white);
+  background-color: var(--btn-css);
+  transform: var(--btn-transform);
+  transition: var(--btn-transition);
+}
+.btn-newbie {
+  color: var(--btn-newbie);
+  background-color: var(--btn-newbie-t20);
+  transition: var(--btn-transition);
+}
+.btn-newbie:hover {
+  color: var(--white);
+  background-color: var(--btn-newbie);
+  transform: var(--btn-transform);
+  transition: var(--btn-transition);
+}
+
+/* RESPONSIVE*/
+@media screen and (max-width: 768px) {
+  /* responsive header & nav */
+  header {
+    min-height: 150px;
+  }
+  .logo > img {
+    max-width: 200px;
+  }
+  .github-user {
+    display: none;
+    transition: 0.3s;
+  }
+  .btn {
+    padding: 0.4rem 0.85rem;
+  }
+  /* responsive card container */
+}
