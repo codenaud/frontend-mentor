@@ -14,9 +14,9 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="assets/img/logo-frontend-mentor-desktop-light.svg" alt="Frontend Mentor Logo" width="225px">
+                <a href="https://www.frontendmentor.io"><img src="assets/img/logo-frontend-mentor-desktop-light.svg"
+                        alt="Frontend Mentor Logo" width="225px"></a>
             </div>
-
             <ul class="nav-items">
                 <li>
                     <a class="btn btn-contact" href="https://github.com/codenaud/"><span
@@ -26,32 +26,132 @@
         </nav>
     </header>
     <main>
-        <div class="card-container">
-            <!-- Card -->
-            <div class="card-body">
-                <div class="card-img">
-                    <a href="newbie/results-summary-component-main/index.html">
-                        <img src="newbie/results-summary-component-main/design/desktop-preview.jpg"
-                            alt="Result Summary"></a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-header">
-                        <h2><a href="newbie/results-summary-component-main/index.html">Result Summary</a></h2>
-                    </div>
-                    <div class="card-description-body">
-                        <div class="card-description-body-technology">
-                            <p class="btn-category btn-html">html</p>
-                            <p class="btn-category btn-css">css</p>
+        <div class="filters">
+            <button class="btn-filter filter-btn" data-category="all">All</button>
+            <button class="btn-filter filter-btn" data-category="newbie">Newbie</button>
+            <button class="btn-filter filter-btn" data-category="junior">Junior</button>
+            <button class="btn-filter filter-btn" data-category="intermediate">Intermediate</button>
+            <button class="btn-filter filter-btn" data-category="advanced">Advanced</button>
+            <button class="btn-filter filter-btn" data-category="guru">Guru</button>
+        </div>
+        <div class="items">
+            <div class="card-container">
+                <!-- Card [Newbie]-->
+                <div class="item newbie all">
+
+                    <!-- Card -->
+                    <!-- Card [Results summary component]-->
+                    <div class="card-body">
+                        <div class="card-img">
+                            <a href="newbie/results-summary-component-main/index.html">
+                                <img src="newbie/results-summary-component-main/design/desktop-preview.jpg"
+                                    alt="Result Summary"></a>
                         </div>
-                        <div class="card-description-body-level">
-                            <p class="btn-level btn-newbie">newbie</p>
+                        <div class="card-description">
+                            <div class="card-description-header">
+                                <h2><a href="newbie/results-summary-component-main/index.html">Result Summary</a></h2>
+                            </div>
+                            <div class="card-description-body">
+                                <div class="card-description-body-technology">
+                                    <p class="btn-category btn-html">html</p>
+                                    <p class="btn-category btn-css">css</p>
+                                </div>
+                                <div class="card-description-body-level">
+                                    <p class="btn-level btn-newbie">newbie</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <!-- Card [Product preview card]-->
+                    <div class="card-body">
+                        <div class="card-img">
+                            <a href="newbie/product-preview-card-component/index.html">
+                                <img src="newbie/product-preview-card-component/design/desktop-preview.jpg"
+                                    alt="Result Summary"></a>
+                        </div>
+                        <div class="card-description">
+                            <div class="card-description-header">
+                                <h2><a href="newbie/product-preview-card-component/index.html">Product preview card
+                                    </a></h2>
+                            </div>
+                            <div class="card-description-body">
+                                <div class="card-description-body-technology">
+                                    <p class="btn-category btn-html">html</p>
+                                    <p class="btn-category btn-css">css</p>
+                                </div>
+                                <div class="card-description-body-level">
+                                    <p class="btn-level btn-newbie">newbie</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="card-body">
+                        <div class="card-img">
+                            <a href="newbie/qr-code-component/index.html">
+                                <img src="newbie/qr-code-component/design/desktop-preview.jpg" alt="Result Summary"></a>
+                        </div>
+                        <div class="card-description">
+                            <div class="card-description-header">
+                                <h2><a href="newbie/qr-code-component/index.html">QR code component</a></h2>
+                            </div>
+                            <div class="card-description-body">
+                                <div class="card-description-body-technology">
+                                    <p class="btn-category btn-html">html</p>
+                                    <p class="btn-category btn-css">css</p>
+                                </div>
+                                <div class="card-description-body-level">
+                                    <p class="btn-level btn-newbie">newbie</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
                 </div>
+                <!-- End Newbie Cards -->
+
+                <!-- Card [Junior]-->
+                <div class="item junior all">
+                    <!-- Card -->
+                </div>
+                <!-- End Junior Cards -->
+
+                <!-- Card [Intermediate]-->
+                <div class="item intermediate all">
+                    <!-- Card -->
+                </div>
+                <!-- End Intermediate Cards -->
+
+                <!-- Card [Advanced]-->
+                <div class="item advanced all">
+                    <!-- Card -->
+                </div>
+                <!-- End Advanced Cards -->
+
+                <!-- Card [Guru]-->
+                <div class="item guru all">
+                    <!-- Card -->
+                </div>
+                <!-- End Guru Cards -->
             </div>
-            <!-- End Card -->
         </div>
     </main>
+
+    <!-- <div class="filters">
+        <button class="filter-btn" data-category="newbie">Newbie</button>
+        <button class="filter-btn" data-category="junior">Junior</button>
+        <button class="filter-btn" data-category="intermediate">Intermediate</button>
+    </div>
+
+    <div class="items">
+        <div class="item newbie">Elemento Newbie</div>
+        <div class="item junior">Elemento Junior</div>
+        <div class="item intermediate">Elemento Intermediate</div>
+         Más elementos con las clases correspondientes 
+    </div> -->
 
 
 
