@@ -130,7 +130,7 @@ nav > ul > li > a > i {
 /* Card container */
 main {
   max-width: 1158px;
-  margin: 3rem auto;
+  margin: 2rem auto;
   padding: 0 2rem;
 }
 .card-container {
@@ -293,7 +293,6 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 .btn-filter {
   padding: 0.5rem 1.2rem;
