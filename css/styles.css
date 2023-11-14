@@ -287,12 +287,12 @@ main {
   display: none;
 }
 .filters {
-  padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .btn-filter {
   padding: 0.5rem 1.2rem;
