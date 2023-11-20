@@ -1,0 +1,16 @@
+{
+  "name": "sprint-01-2-v2",
+  "version": "1.0.0",
+  "description": "[![IT Academy](assets/git-screenshot.png)](https://codenaud.github.io/sprint-01-2/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sass": "^1.69.5"
+  }
+}

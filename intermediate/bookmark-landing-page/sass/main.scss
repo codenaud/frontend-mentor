@@ -1,0 +1,585 @@
+// custom styles
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* min-width */
+#header-nav,
+#intro,
+#features {
+  min-width: 375px;
+}
+.offcanvas {
+  background-clip: inherit !important;
+  padding: 20px 30px;
+}
+
+.offcanvas-header {
+  padding-top: 10px !important;
+}
+
+a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none {
+  background-color: hsl(0, 94%, 66%);
+  cursor: pointer;
+  margin-left: 1.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.6rem 1.6rem;
+}
+
+a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none:hover {
+  color: hsl(0, 94%, 66%);
+  border-color: hsl(0, 94%, 66%);
+  background-color: hsl(255, 100%, 100%);
+}
+
+.navbar-sidebar-sm.d-flex.justify-content-center.align-items-center.pb-5 {
+  display: none !important;
+}
+
+a.nav-link {
+  cursor: pointer;
+  color: hsl(229, 31%, 21%);
+}
+
+.nav-fstyle {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.nav-fstyle-footer {
+  font-size: 10px;
+}
+
+a.nav-link:hover {
+  color: hsl(0, 94%, 66%) !important;
+}
+
+.container.nav-container {
+  padding-right: 0px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../assets/imagenes/icon-hamburger.svg) !important;
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+}
+
+.btn-close {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+
+.button.btn-close.btn-close-white.shadow-none {
+  margin-right: 22px;
+}
+
+.blue-shape {
+  background: hsl(231, 69%, 60%);
+  width: 120px;
+  height: 80px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+/* Nav Tabs*/
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-bottom: 3px solid red !important;
+  color: #262b48 !important;
+  width: fit-content;
+}
+.nav-link {
+  color: #85858d !important;
+
+  &:focus {
+    // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+
+    border-color: transparent !important;
+  }
+}
+.nav-tabs .nav-link:hover {
+  color: #fb5859 !important;
+  border-color: transparent !important;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.6rem !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.btn:hover {
+  background-color: transparent !important;
+}
+.btn-primary:hover {
+  color: #5266df !important;
+}
+
+.btn-light {
+  color: #5a5a66 !important;
+}
+
+/* Letter Spacing */
+.ls-tighter {
+  letter-spacing: -0.05em;
+}
+.ls-tight {
+  letter-spacing: -0.025em;
+}
+.ls-normal {
+  letter-spacing: 0em;
+}
+.ls-wide {
+  letter-spacing: 0.025em;
+}
+.ls-wider {
+  letter-spacing: 0.05em;
+}
+.ls-widest {
+  letter-spacing: 0.1em;
+}
+.ls-widest-plus {
+  letter-spacing: 0.5em;
+}
+/* Tabs Spacing */
+.mx-tabs {
+  margin: 0 10% 0 10%;
+}
+
+/* Background shape*/
+.blue-shape-bg {
+  background: #5368df;
+  width: 41.5%;
+  height: 325px;
+  border-radius: 50rem 0 0 50rem;
+  z-index: -1;
+  bottom: 72px;
+  right: 0;
+}
+.blue-shape-bg-reverse {
+  background: #5368df;
+  border-radius: 0 50rem 50rem 0;
+  z-index: -1;
+}
+.blue-shape-bg-reverse.first-tab-shape {
+  width: 41.5%;
+  height: 325px;
+  bottom: 90px;
+  left: 0;
+}
+.blue-shape-bg-reverse.second-tab-shape {
+  width: 41.5%;
+  height: 325px;
+  bottom: 160px;
+  left: 0;
+}
+.ps-custom-second-tab {
+  padding-left: 10.5% !important;
+}
+.ps-custom-third-tab {
+  padding-left: 10% !important;
+}
+.blue-shape-bg-reverse.third-tab-shape {
+  width: 41.5%;
+  height: 325px;
+  bottom: 120px;
+  left: 0;
+}
+.fs-title {
+  font-size: 2.3rem !important;
+}
+.fs-text {
+  font-size: 1rem !important;
+}
+.fs-title-section {
+  font-size: 2.3rem !important;
+}
+
+/* Pricing section */
+/* Cards */
+.card {
+  border-color: transparent !important;
+}
+.card-img-top {
+  width: 100px !important;
+}
+.btn-card {
+  width: 85% !important;
+}
+.shadow-card {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem !important;
+}
+.pricing-cards {
+  height: 450px;
+}
+/* Accordion (Faqs)*/
+.accordion-button {
+  font-size: 1.1rem !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.accordion-item {
+  border: none !important;
+  border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+  border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+}
+.accordion-item:first-of-type {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+.accordion-item:last-of-type {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+.accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../assets/imagenes/icon-arrow-red.svg) !important;
+  margin-bottom: 0.6rem !important;
+}
+.accordion-button::after {
+  background-image: url(../assets/imagenes/icon-arrow.svg) !important;
+}
+.accordion-button:hover {
+  color: #fb5859 !important;
+}
+/* Contact*/
+.f-rubik {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem !important;
+}
+.form-control {
+  padding: 0.475rem 0.75rem !important;
+}
+.btn-danger:hover {
+  background-color: white !important;
+  color: #fb5859 !important;
+}
+/* footer */
+.footer {
+  background-color: #262b48;
+}
+.btn-fwi {
+  width: 100% !important;
+}
+/* validating forms */
+.invalid-feedback {
+  background-color: #fb5859;
+  color: white !important;
+  text-align: left;
+  padding: 0.3rem;
+  margin-top: -3px !important;
+  border-radius: 0 0 5px 5px;
+}
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  background-image: url(../assets/imagenes/icon-error.svg) !important;
+}
+/* atributio*/
+.atribution {
+  background-color: #fb5859 !important;
+}
+.atribution > small > a {
+  color: white;
+  padding-left: 0.5rem;
+  text-decoration: none;
+}
+.atribution > small > a:hover {
+  color: #262b48;
+}
+/* ----- Responsives */
+// `xl` applies to large devices (desktops, less than 1200px)
+/* font sizes */
+@media (max-width: 1199.98px) {
+  /* Background shape*/
+  .fs-title {
+    font-size: 1.7rem !important;
+  }
+  .fs-text {
+    font-size: 0.8rem !important;
+  }
+  .fs-se > button {
+    font-size: 0.6rem !important;
+  }
+  .blue-shape-bg {
+    width: 42.5% !important;
+    height: 300px !important;
+    top: 120px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.first-tab-shape {
+    width: 50% !important;
+    height: 300px !important;
+    bottom: 100px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.second-tab-shape {
+    width: 50% !important;
+    height: 300px !important;
+    bottom: 120px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.third-tab-shape {
+    width: 50% !important;
+    height: 300px !important;
+    bottom: 120px !important;
+    right: 0px !important;
+  }
+  /* feature tabs */
+  .ps-custom-first-tab {
+    padding-left: 0 !important;
+  }
+  .ps-custom-second-tab {
+    padding-left: 5% !important;
+  }
+  .ps-custom-third-tab {
+    padding-left: 5% !important;
+  }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  div#offcanvasNavbar {
+    width: 100%;
+    max-width: 100vw;
+  }
+  .navbar-sidebar {
+    background-color: hsla(229, 31%, 22%, 0.95) !important;
+    backdrop-filter: blur(1px);
+  }
+  .navbar-sidebar-body li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-sidebar-body a {
+    color: white;
+  }
+  .nav-fstyle {
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .navbar-sidebar-btn {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-sidebar-login {
+    width: 100%;
+    padding: 20px;
+  }
+  .navbar-sidebar-sm {
+    display: flex;
+  }
+  a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none {
+    background-color: transparent;
+    margin-left: 0px;
+  }
+  a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none:hover {
+    color: #262b48;
+    border-color: #262b48;
+    background-color: white;
+  }
+  .navbar-sidebar-sm.d-flex.justify-content-center.align-items-center.pb-5 {
+    display: flex !important;
+  }
+  .navbar-sidebar-sm > i {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .navbar-sidebar-sm > i:hover {
+    color: #fb5859;
+  }
+  a.nav-link {
+    cursor: pointer;
+  }
+  a.nav-link:hover {
+    color: #fb5859 !important;
+  }
+  .container.nav-container {
+    padding-right: 20px;
+  }
+  /*  Background shape*/
+  .blue-shape-bg {
+    width: 70% !important;
+    height: 320px !important;
+    top: 160px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.first-tab-shape {
+    width: 60% !important;
+    height: 320px !important;
+    bottom: 350px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.second-tab-shape {
+    width: 60% !important;
+    height: 320px !important;
+    bottom: 380px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.third-tab-shape {
+    width: 60% !important;
+    height: 320px !important;
+    bottom: 380px !important;
+    right: 0px !important;
+  }
+  .fs-title {
+    font-size: 2.3rem !important;
+  }
+  .fs-text {
+    font-size: 0.9rem !important;
+  }
+  /* price cards */
+  .pricing-cards {
+    height: 100%;
+  }
+}
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  /* Background shape*/
+  .blue-shape-bg {
+    width: 70% !important;
+    height: 280px !important;
+    top: 110px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.first-tab-shape,
+  .second-tab-shape,
+  .third-tab-shape {
+    width: 70% !important;
+    height: 280px !important;
+    bottom: 380px !important;
+    right: 0px !important;
+  }
+  /* feature tabs */
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    width: 50%;
+    margin: auto;
+  }
+  .nav-tabs .nav-link,
+  .nav-tabs .nav-item.show .nav-link {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  .nav-tabs {
+    border: none !important;
+  }
+  .bb-tab {
+    border-bottom: 1px solid #dee2e6 !important;
+    width: 80vw;
+  }
+  .bt-tab {
+    border-top: 1px solid #dee2e6 !important;
+    width: 80vw;
+  }
+  /* price cards */
+  .pricing-cards {
+    height: 100%;
+  }
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  /* Background shape*/
+  .blue-shape-bg {
+    width: 80% !important;
+    min-width: 80% !important;
+    height: 190px !important;
+    top: 80px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.first-tab-shape {
+    width: 80% !important;
+    min-width: 80% !important;
+    height: 190px !important;
+    bottom: 340px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.second-tab-shape {
+    width: 80% !important;
+    min-width: 80% !important;
+    height: 190px !important;
+    bottom: 365px !important;
+    right: 0px !important;
+  }
+  .blue-shape-bg-reverse.third-tab-shape {
+    width: 80% !important;
+    min-width: 80% !important;
+    height: 190px !important;
+    bottom: 360px !important;
+    right: 0px !important;
+  }
+
+  .fs-title {
+    font-size: 1.7rem !important;
+  }
+  .fs-text {
+    font-size: 1rem !important;
+  }
+  .fs-se > button {
+    font-size: 0.65rem !important;
+  }
+  /* feature tabs */
+  .nav-tabs .nav-link.active {
+    width: 60% !important;
+    margin: auto;
+  }
+  .nav-tabs .nav-link,
+  .nav-tabs .nav-item.show .nav-link {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  .nav-tabs {
+    border: none !important;
+  }
+  .bb-tab {
+    border-bottom: 1px solid #dee2e6 !important;
+    width: 80vw;
+  }
+  .bt-tab {
+    border-top: 1px solid #dee2e6 !important;
+    width: 80vw;
+  }
+  /* price cards */
+  .pricing-cards {
+    height: 100%;
+  }
+  .nav-fstyle-footer {
+    font-size: 12px;
+  }
+}
+
+// custom variables
+$primary: #5266df;
+$danger: #fb5859;
+$font-size-base: 0.9rem;
+
+// import the functions & variables
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+  'customdark': #262b48,
+  'custommuted': #b1b0b7,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
