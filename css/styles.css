@@ -34,11 +34,17 @@
   --btn-css-t20: rgba(143, 95, 232, 0.2);
   --btn-js: rgb(252, 66, 74);
   --btn-js-t20: rgb(252, 66, 74, 0.2);
+  --btn-bootstrap: rgb(244, 120, 54);
+  --btn-bootstrap-t20: rgba(244, 120, 54, 0.2);
+  --btn-sass: rgb(139, 195, 74);
+  --btn-sass-t20: rgba(139, 195, 74, 0.2);
 
   --btn-newbie: rgb(255, 171, 0);
   --btn-newbie-t20: rgba(255, 171, 0, 0.2);
   --btn-junior: rgb(7, 181, 137);
   --btn-junior-t20: rgba(7, 181, 131, 0.2);
+  --btn-intermediate: rgb(255, 235, 59);
+  --btn-intermediate-t20: rgba(255, 235, 59, 0.2);
 
   --btn-transition: 0.4s;
   --btn-transform: translateY(-0.25em);
@@ -252,6 +258,28 @@ main {
   transform: var(--btn-transform);
   transition: var(--btn-transition);
 }
+.btn-bootstrap {
+  color: var(--btn-bootstrap);
+  background-color: var(--btn-bootstrap-t20);
+  transition: var(--btn-transition);
+}
+.btn-bootstrap:hover {
+  color: var(--white);
+  background-color: var(--btn-bootstrap);
+  transform: var(--btn-transform);
+  transition: var(--btn-transition);
+}
+.btn-sass {
+  color: var(--btn-sass);
+  background-color: var(--btn-sass-t20);
+  transition: var(--btn-transition);
+}
+.btn-sass:hover {
+  color: var(--white);
+  background-color: var(--btn-sass);
+  transform: var(--btn-transform);
+  transition: var(--btn-transition);
+}
 .btn-newbie {
   color: var(--btn-newbie);
   background-color: var(--btn-newbie-t20);
@@ -274,7 +302,17 @@ main {
   transform: var(--btn-transform);
   transition: var(--btn-transition);
 }
-
+.btn-intermediate {
+  color: var(--btn-intermediate);
+  background-color: var(--btn-intermediate-t20);
+  transition: var(--btn-transition);
+}
+.btn-intermediate:hover {
+  color: var(--white);
+  background-color: var(--btn-intermediate);
+  transform: var(--btn-transform);
+  transition: var(--btn-transition);
+}
 /* Filter & item */
 .item {
   justify-content: center;
